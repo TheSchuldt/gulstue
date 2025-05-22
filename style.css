@@ -57,6 +57,30 @@ html {
   scroll-behavior: smooth;
 }
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background-color: #fdd835;
+  color: black;
+  font-size: 24px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: opacity 0.3s ease;
+}
+.scroll-to-top:hover {
+  background-color: #ffeb3b;
+}
+
+
 /* HERO sektion */
 .hero {
   position: relative;
@@ -145,6 +169,7 @@ html {
   flex-direction: column;
   justify-content: center;
 
+
 }
 
 .about-text h2 {
@@ -158,7 +183,8 @@ html {
   font-size: 24px;
   line-height: 1.8;
   max-width: 600px;
-  display: flex;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .crown-wrapper {
@@ -204,7 +230,8 @@ html {
   font-size: 24px;
   line-height: 1.6;
   max-width: 600px;
-
+  margin: 0 auto;
+  text-align: center;
 }
 
 .dots {
@@ -360,8 +387,9 @@ html {
 .art-section {
   position: relative;
   padding: 4rem 2rem;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
+  z-index: 1;
 }
 
 .art-text h2 {
@@ -378,6 +406,7 @@ html {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+  max-width: 60%;
 }
 
 .art-grid img {
@@ -392,12 +421,20 @@ html {
   max-width: 70%;
   margin: 0 auto;
 }
-.gul-streg {
+
+.gul-streg-wrapper {
   position: absolute;
   top: 0;
   left: 0;
-  width:100% ;
-  scale: 2;
-  pointer-events: none;
+  width: 100%;
+  height: 100%;
   z-index: -1;
+  overflow: hidden;
 }
+.gul-streg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
