@@ -1,0 +1,403 @@
+body {
+  margin: 0;
+  font-family: 'Fredoka', sans-serif;
+  background-color: #F5F2E3;
+  color: #000;
+}
+
+header {
+  background-color: #F5F2E3;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-left {
+  flex: 1;
+  font-size: 24px;
+  justify-content: flex-start;
+  padding-left: 5%;
+  justify-content: space-between;
+}
+
+.nav-right {
+  flex: 1;
+  font-size: 24px;
+  justify-content: flex-end;
+  padding-right: 5%;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: 140px;
+  height: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* HERO sektion */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 0;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* ABOUT sektion */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 4%;
+  gap: 2rem;
+
+}
+
+.about-images {
+  flex: 1 1 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.image-large img,
+.image-small img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.image-small {
+  display: flex;
+  gap: 1rem;
+}
+
+.image-small img {
+  width: 48%;
+}
+
+.about-text {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.about-text h2 {
+  font-size: 49px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+.about-text p {
+  font-size: 24px;
+  line-height: 1.8;
+  max-width: 600px;
+  display: flex;
+}
+
+.crown-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.crown-icon {
+  width: 70px;
+  height: auto;
+}
+
+.expertise {
+  padding: 4rem 5%;
+}
+
+.expertise-content {
+  background-color: #fadd3d;
+  border-radius: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.expertise-text {
+  flex: 1 1 60%;
+}
+
+.expertise-text h2 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.expertise-text p {
+  font-size: 24px;
+  line-height: 1.6;
+  max-width: 600px;
+
+}
+
+.dots {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center; /* Centreret */
+  gap: 1.5rem;
+}
+
+.dot {
+  width: 50px;           /* Større prikker */
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 1;
+
+}
+
+.dot.active {
+  opacity: 1;
+}
+
+
+.expertise-image img {
+  width: 250px;
+  height: auto;
+  
+}
+
+.workshops-section {
+  padding: 10rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.workshops-section h2 {
+  font-size: 48px;
+  margin-bottom: 0.5rem;
+}
+
+.subheading {
+  font-size: 24px;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.workshop-columns {
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.workshop-item {
+  max-width: 250px;
+  text-align: center;
+}
+
+.image-container {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.workshop-item h3 {
+  font-size: 30px;
+  margin-bottom: 0.75rem;
+}
+
+.workshop-item p {
+  font-size: 24px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Valgfri: Hvis du vil tilføje en SVG-streg mellem elementerne */
+.workshops-section::before {
+  content: "";
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  height: 1000px;
+  background: url("billeder/gul-streg.png") no-repeat center;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.faq-section {
+
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faq-header {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.faq-header h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.faq-header p {
+  font-size: 24px;
+  color: #333;
+  max-width: 900px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 kolonner */
+  gap: 2rem 4rem; /* lodret og vandret afstand */
+  align-items: start;
+}
+
+.faq-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.faq-item img {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.faq-item h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+}
+
+.faq-item p {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.art-section {
+  position: relative;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.art-text h2 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.art-text p {
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+
+.art-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.art-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.span-two {
+  grid-column: span 2;
+  max-width: 70%;
+  margin: 0 auto;
+}
+.gul-streg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100% ;
+  scale: 2;
+  pointer-events: none;
+  z-index: -1;
+}
