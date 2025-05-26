@@ -591,3 +591,27 @@ margin-right: 150px;
   margin-right: 150px;
   max-width: 100%;
 }
+
+.footer{
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-left: 50px;
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1000px;
+}
+
+.footer-right{
+  display: flex;
+  flex-direction: column;
+margin-left: 900px;
+}
