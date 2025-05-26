@@ -538,3 +538,56 @@ form button:hover {
   color: rgb(0, 0, 0);
   transition: all 0.3s ease;
 }
+
+.Keramik-tekst{
+  display: flex;
+  justify-content: right;
+  margin-right: 150px;
+}
+.Keramik-tekst h2 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.Keramik-bil1 {
+  display: flex;
+  justify-content: right;
+  margin-right: 150px;
+  max-width: 100%;
+}
+.Keramik-bil2 {
+  display: flex;
+  justify-content: right;
+  margin-top: 50px;
+  margin-right: 150px;
+  max-width: 100%;
+}
+
+.Keramik-bil3 {
+margin-right: 150px;
+}
+
+.Digital-tekst {
+  display: flex;
+  justify-content: left;
+  margin-left: 150px;
+}
+
+.Digital-tekst h2 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.Digital-bil1 {
+  display: flex;
+  justify-content: left;
+  margin-left: 150px;
+  max-width: 100%;
+}
+
+.Digital-bil2 {
+  display: flex;
+  justify-content: right;
+  margin-right: 150px;
+  max-width: 100%;
+}
