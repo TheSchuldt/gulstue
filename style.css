@@ -784,6 +784,16 @@ form button:hover {
   display: none; /* skjul mobil-navigation på desktop */
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Undgå horisontal scroll */
+}
+
 @media only screen and (max-width: 430px) {
   header {
     flex-direction: row;
@@ -963,3 +973,60 @@ form button:hover {
 .workshop-columns {
   align-items: center;
   }
+
+ /* Skjul burger-menu på skærme bredere end 768px */
+@media (min-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
+
+  nav ul {
+    display: flex !important; /* sørg for at desktop-menu vises som flex */
+  }
+
+  nav {
+    position: static !important;
+  }
+}
+ 
+@media (max-width: 480px) {
+  .kontaktboks {
+    flex-direction: column;
+    max-width: 95%;
+    margin: 20px auto;
+    border-radius: 20px;
+  }
+
+  .venstre {
+    display: none; /* Skjul billede og dots */
+  }
+
+  .hoejre {
+    width: 100%;
+    padding: 1.5rem 1rem;
+  }
+
+  .hoejre h2 {
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
+
+  .hoejre p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  form label {
+    font-size: 0.85rem;
+  }
+
+  form input,
+  form textarea {
+    font-size: 1rem;
+  }
+
+  form button {
+    width: 100%;
+  }
+}
+
