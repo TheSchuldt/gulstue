@@ -27,7 +27,7 @@
   </header>
   <section class="hero">
     <video autoplay muted loop playsinline class="bg-video">
-      <source src="videoer/afsluttende1.mp4" type="video/mp4" />
+      <source src="videoer/videogulstue.mp4" type="video/mp4" />
       Din browser understøtter ikke video-tagget.
     </video>
 
@@ -214,24 +214,24 @@
     <video src="videoer/portfoliovideo2.mp4"></video></div>
 </section>
 
-<section>
-    <h2>Priser</h2>
+<section class="priser">
 
-    <div>
-        <p>Engangsbeløb</p>
-
-        <p>189 DKK</p>
-
-        <p>Gul stue skaber workshops, der forener leg, læring og fællesskab</p>
+  <h2>Priser</h2>
+  <div class="pris-container">
+    <div class="prisboks engangs">
+      <h3>Éngangsbeløb</h3>
+      <div class="pris">189 <span>DKK</span></div>
+      <p>Gul Stue skaber workshops, der forener leg, læring og fællesskab.</p>
     </div>
-
-    <div>
-        <p>Klippekort</p>
-        <p>599 DKK</p>
-        <p>Gul stue skaber workshops, der forener leg, læring og fællesskab</p>
+    <div class="prisboks klippekort">
+      <h3>Klippekort</h3>
+      <div class="pris">599 <span>DKK</span></div>
+      <p>Gul Stue skaber workshops, der forener leg, læring og fællesskab.</p>
     </div>
-
+  </div>
 </section>
+
+
 
 <section class="kontaktboks" id="kontakt">
   <div class="venstre">
@@ -244,10 +244,10 @@
     <h2>Sjove aktiviteter designet til<br>børn i alderen <strong>3–6 år</strong></h2>
     <p>Kontakt Gul Stue for at få svar på dine spørgsmål, eller tilmeld dig en begivenhed.</p>
     <form>
-      <label for="navn">Navn</label>
+      <label for="navn">Navn*</label>
       <input type="text" id="navn" name="navn" required>
 
-      <label for="email">E-mail</label>
+      <label for="email">E-mail*</label>
       <input type="email" id="email" name="email" required>
 
       <label for="emne">Emne</label>
@@ -261,25 +261,41 @@
   </div>
 </section>
 
-<footer>
+  <div class="streger-container">
+    <img src="billeder/footerstreger.png" alt="To skrå streger" class="streger-billede">
+  </div>
 
-    <p>Følg gul stue</p>
+<footer class="footer">
+    <div class="footer-left">
+      <h3>Følg GulStue</h3>
+      <div class="social">
+        <img src="billeder/instagram-icon.png" alt="Instagram ikon">
+        <span>SofieGulStue</span>
+      </div>
+      <div class="social">
+        <img src="billeder/facebook-icon.png" alt="Facebook ikon">
+        <span>SofieGulStue</span>
+      </div>
+    </div>
 
-    <p>"insta billede" SofieGulStue</p>
-    <p>*Facebook billede" SofieGulStue</p>
+    <div class="footer-center">
+      <img src="billeder/logo.png" alt="GulStue logo" class="footer-logo" />
+    </div>
 
- <img src="billeder/logo.png" alt="Gul Stue Logo" />
+<div class="footer-right">
+  <h2>Gulstue 2025</h2>
+  <h3>Kontakt</h3>
+  <div class="contact-info">
+    <a href="mailto:sofie@gulstue.dk" class="contact-item">sofie@gulstue.dk</a>
+    <a href="tel:+4574829320" class="contact-item">+45 23 86 32 35</a>
+  </div>
+  <p class="legal">
+    <a href="#">Handelsbetingelser</a><br>
+    <a href="#">Privatlivspolitik</a>
+  </p>
+</div>
 
-<p>Gulstue 2025</p>
-
-<p>Kontakt</p>
-<p>Sofie@Gulstue.dk</p>
-<p>+45 74 82 93 20</p>
-
-<p>Handelsbetingelser</p>
-<p>Privatlivspolitik</p>
-
-</footer>
+  </footer>
 
 
 <button id="scrollToTopBtn" class="scroll-to-top">↑</button>
