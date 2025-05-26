@@ -26,3 +26,4 @@ document.addEventListener("DOMContentLoaded", function () {
       mobileNav.classList.toggle("active");
     });
   });
+
