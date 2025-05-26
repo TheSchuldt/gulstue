@@ -16,3 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const burger = document.querySelector(".burger-menu");
+    const mobileNav = document.getElementById("mobileNav");
+
+    burger.addEventListener("click", function () {
+      mobileNav.classList.toggle("active");
+    });
+  });
