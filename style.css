@@ -968,8 +968,89 @@ html, body {
     height: 40px;
     font-size: 18px;
   }
+
+  .faq-header {
+    text-align: center;
+  }
+
+  .faq-header h2 {
+    font-size: 32px;
+  }
+
+  .faq-header p {
+    font-size: 24px;
+  }
+
+
+.faq-grid h3{
+  text-align: left;
+  font-size: 20px;
 }
 
+.faq-grid p {
+  text-align: left;
+  font-size: 16px;
+}
+
+.faq-item{
+  margin-top: 15px;
+}
+
+.Keramik-bil3 {
+  width: 200px;
+}
+.Keramik-bil1{
+margin-left: 150px;
+}
+
+.Keramik-tekst{
+  width: 200px;
+  margin-left: 10px;
+}
+
+.keramik-bil4{
+  width: 200px;
+}
+
+.Keramik-bil2{
+  margin-left: 150px;
+  width: 230px;
+  margin-top: 15px;
+}
+
+.Digital-bil2{
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.Digital-bil1{
+margin-right: 20px;
+}
+
+.Digital-tekst{
+  margin-left: 30px;
+}
+
+
+.footer{
+  align-items: center;
+}
+
+.footer-left{
+  align-items: center;
+  margin-left: 55px;
+}
+
+.footer-center{
+  display: none;
+}
+
+.footer-right {
+  align-items: center;
+  margin-right: 35px;
+}
+
+}
 .workshop-columns {
   align-items: center;
   }
@@ -987,6 +1068,7 @@ html, body {
   nav {
     position: static !important;
   }
+
 }
  
 @media (max-width: 480px) {
