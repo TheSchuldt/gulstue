@@ -505,6 +505,7 @@ body {
   text-align: center;
   padding: 60px 20px;
   background-color: #fef8e7; /* samme som resten af siden */
+  font-size: 40px;
 }
 
 .pris-container {
@@ -516,7 +517,7 @@ body {
 }
 
 .prisboks {
-  width: 250px;
+  width: 800px;
   height: 320px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -546,7 +547,7 @@ body {
 }
 
 .pris {
-  font-size: 28px;
+  font-size: 40px;
   font-weight: bold;
   background: rgba(255, 255, 255, 0.2);
   padding: 10px 20px;
@@ -568,7 +569,7 @@ body {
 }
 
 .prisboks p {
-  font-size: 12px;
+  font-size: 18px;
   max-width: 200px;
   line-height: 1.4;
 }
@@ -1005,7 +1006,7 @@ margin-left: 150px;
 
 .Keramik-tekst{
   width: 200px;
-  margin-left: 10px;
+ margin-left: 160px;
 }
 
 .keramik-bil4{
@@ -1020,11 +1021,13 @@ margin-left: 150px;
 
 .Digital-bil2{
   margin-top: 50px;
-  margin-left: 20px;
+  width: 300px;
+  margin-left: 50px;
 }
 
 .Digital-bil1{
-margin-right: 20px;
+margin-left: 50px;
+width: 300px;
 }
 
 .Digital-tekst{
@@ -1047,8 +1050,32 @@ margin-right: 20px;
 
 .footer-right {
   align-items: center;
-  margin-right: 35px;
+  margin-right: 38px;
 }
+
+.priser h2{
+  font-size: 32px;
+}
+
+.prisboks{
+  width: 250px;
+}
+
+.prisboks p {
+  font-size: 12px;
+  max-width: 200px;
+  line-height: 1.4;
+}
+
+.pris {
+  font-size: 28px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
 
 }
 .workshop-columns {
