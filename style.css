@@ -336,6 +336,77 @@ html {
   pointer-events: none;
 }
 
+.Eventh2{
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.Event{
+  display: flex
+}
+
+.Eventp{
+display: flex;
+flex-direction: row;
+font-size: 12px;
+width: 300px;
+justify-content: space-between;
+}
+.Event-tekst{
+  font-size: 20px;
+  color: #333;
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 1rem;
+  width: 300px;
+}
+
+.Event-h3{
+  text-align: left;
+  width: 300px;
+}
+
+.Event1{
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  align-items: center;
+}
+
+.Event1 img{
+  width: 300px;
+}
+
+.Event2{
+  display: flex;
+  flex-direction: column;
+    width: 33%;
+    align-items: center;
+}
+
+.Event2 img{
+  width: 300px;
+}
+.Event3{
+  display: flex;
+  flex-direction: column;
+    width: 33%;
+    align-items: center;
+}
+
+.Event3 img{
+  width: 300px;
+}
+
+.Event-knap{
+  background-color: #F3D43C;
+  border: none;
+  font-size: 16px;
+  padding: 4px 18px;
+  margin-right: 185px;
+}
+
+
 .faq-section {
   padding: 5rem 2rem;
   max-width: 1200px;
