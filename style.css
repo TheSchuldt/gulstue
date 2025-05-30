@@ -482,60 +482,71 @@ html {
   color: #333;
 }
 
+/* Sektion med generel styling for kunst-sektionen */
 .art-section {
   position: relative;
-  padding: 4rem 2rem;
+  padding: 4rem 2rem; /* Luft omkring indholdet */
   max-width: 100%;
-  margin: 0 auto;
-  z-index: 1;
+  margin: 0 auto; /* Centrer sektionen horisontalt */
+  z-index: 1; /* Sørger for at den ligger over baggrunde */
 }
 
+/* Overskrift i kunst-sektion */
 .art-text h2 {
   font-size: 48px;
   font-weight: bold;
 }
 
+/* Brødtekst i kunst-sektion */
 .art-text p {
   font-size: 24px;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; /* Luft under paragrafen */
 }
 
+/* Gitter-layout til billeder */
 .art-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr); /* To kolonner af lige bredde */
+  gap: 2rem; /* Afstand mellem elementer */
   max-width: 60%;
 }
 
+/* Styling af billeder i gitteret */
 .art-grid img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  object-fit: cover;
+  border-radius: 8px; /* Runde hjørner */
+  object-fit: cover; /* Beskær billedet så det passer uden at forvrænges */
 }
 
+/* Element som skal fylde to kolonner i gitteret */
 .span-two {
   grid-column: span 2;
   max-width: 70%;
   margin: 0 auto;
 }
 
-.Keramik-tekst{
+/* Tekstsektion for keramik – højrejusteret */
+.Keramik-tekst {
   display: flex;
   justify-content: right;
   margin-right: 150px;
 }
+
 .Keramik-tekst h2 {
   font-size: 48px;
   font-weight: bold;
 }
 
+/* Første keramikbillede – højrejusteret */
 .Keramik-bil1 {
   display: flex;
   justify-content: right;
   margin-right: 150px;
   max-width: 100%;
 }
+
+/* Andet keramikbillede – højrejusteret med topmargen */
 .Keramik-bil2 {
   display: flex;
   justify-content: right;
@@ -544,10 +555,12 @@ html {
   max-width: 100%;
 }
 
+/* Tredje keramikbillede – kun højremargin */
 .Keramik-bil3 {
-margin-right: 150px;
+  margin-right: 150px;
 }
 
+/* Digital tekstsektion – venstrejusteret */
 .Digital-tekst {
   display: flex;
   justify-content: left;
@@ -559,6 +572,7 @@ margin-right: 150px;
   font-weight: bold;
 }
 
+/* Første digitalbillede – venstrejusteret */
 .Digital-bil1 {
   display: flex;
   justify-content: left;
@@ -566,6 +580,7 @@ margin-right: 150px;
   max-width: 100%;
 }
 
+/* Andet digitalbillede – højrejusteret */
 .Digital-bil2 {
   display: flex;
   justify-content: right;
@@ -573,42 +588,49 @@ margin-right: 150px;
   max-width: 100%;
 }
 
+/* Wrapper til baggrundselementet "gul streg" */
 .gul-streg-wrapper {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: -1; /* Læg det bagved alt andet */
   overflow: hidden;
 }
+
+/* Gul streg billede */
 .gul-streg {
   width: 100%;
   height: auto;
   display: block;
 }
 
+/* Global styling for body */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #fef6e4;
+  background-color: #fef6e4; /* Lys baggrund */
 }
 
+/* Overskrift til pris-sektionen */
 .priser {
   text-align: center;
   padding: 60px 20px;
-  background-color: #fef8e7; /* samme som resten af siden */
+  background-color: #fef8e7; /* Matcher sidens baggrund */
   font-size: 40px;
 }
 
+/* Container til prisbokse */
 .pris-container {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
+  gap: 40px; /* Afstand mellem bokse */
+  flex-wrap: wrap; /* Tillad linjeskift */
   margin-top: 40px;
 }
 
+/* Individuel prisboks */
 .prisboks {
   width: 800px;
   height: 320px;
@@ -625,30 +647,34 @@ body {
   text-align: center;
 }
 
+/* Engangspris – med baggrundsbillede og hvid tekst */
 .engangs {
-  background-image: url("billeder/grønpris.png"); /* udskift med rigtig sti */
+  background-image: url("billeder/grønpris.png"); /* Udskift med korrekt sti */
   color: white;
 }
 
+/* Klippekortpris – med anden baggrund */
 .klippekort {
-  background-image: url("billeder/gulpris.png"); /* udskift med rigtig sti */
+  background-image: url("billeder/gulpris.png"); /* Udskift med korrekt sti */
 }
 
+/* Overskrift i prisboks */
 .prisboks h3 {
   font-size: 18px;
   margin-bottom: 20px;
 }
 
+/* Prisfelt – fremhævet boks */
 .pris {
   font-size: 40px;
   font-weight: bold;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2); /* Gennemsigtig baggrund */
   padding: 10px 20px;
   border-radius: 20px;
   margin-bottom: 20px;
 }
 
-
+/* Baggrundsfarver til pris afhængigt af type */
 .engangs .pris {
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -657,71 +683,78 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+/* Fremhæv prisdelen med fed */
 .pris span {
   font-weight: bold;
 }
 
+/* Brødtekst i prisboks */
 .prisboks p {
   font-size: 18px;
   max-width: 200px;
-  line-height: 1.4;
+  line-height: 1.4; /* Bedre læsbarhed */
 }
 
 
 
 
 
+/* Kontaktboks container */
 .kontaktboks {
-  max-width: 70%;
-  margin: 50px auto;
-  background-color: #fcd34d;
-  border-radius: 40px;
-  display: flex;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 70%; /* Breddebegrænsning */
+  margin: 50px auto; /* Centreret med luft foroven og forneden */
+  background-color: #fcd34d; /* Gul baggrund */
+  border-radius: 40px; /* Runde hjørner */
+  display: flex; /* Brug flexbox til layout */
+  overflow: hidden; /* Skjul overløb */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Let skygge */
 }
 
+/* Venstre side af kontaktboksen – typisk billede */
 .venstre {
-  flex: 1;
+  flex: 1; /* Fyld halvdelen af boksen */
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+/* Billede i venstre side */
 .venstre img {
   width: 100%;
   height: 100%;
   padding-left: 1rem;
   padding-top: 1rem;
-  object-fit: cover;
-  border-radius: 40px 40px 40px 40px; /* Runde hjørner i venstre side */
+  object-fit: cover; /* Fyld container uden forvrængning */
+  border-radius: 40px 40px 40px 40px; /* Runde hjørner hele vejen */
 }
 
-
+/* Små prikker under billede/tekst */
 .dots {
   display: flex;
   justify-content: center;
   gap: 30px;
   padding: 15px;
-
 }
 
+/* Individuelle prikker */
 .dots span {
   width: 30px;
   height: 30px;
   background-color: white;
-  border-radius: 50%;
+  border-radius: 50%; /* Gør dem runde */
 }
 
+/* Højre side af kontaktboksen – typisk tekst og formular */
 .hoejre {
   flex: 1;
   padding: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; /* Centrer indhold vertikalt */
 }
 
+/* Overskrift i højre side */
 .hoejre h2 {
   font-size: 48px;
   font-family: 'Fredoka', sans-serif;
@@ -729,11 +762,13 @@ body {
   font-weight: bold;
 }
 
+/* Brødtekst i højre side */
 .hoejre p {
   font-size: 24px;
   margin-bottom: 1.5rem;
 }
 
+/* Formularens labels */
 form label {
   display: block;
   margin-top: 1rem;
@@ -741,6 +776,7 @@ form label {
   font-weight: bold;
 }
 
+/* Inputs og textarea i formular */
 form input,
 form textarea {
   width: 100%;
@@ -752,11 +788,13 @@ form textarea {
   box-sizing: border-box;
 }
 
+/* Tekstfeltets højde og mulighed for at ændre størrelse */
 form textarea {
   height: 80px;
   resize: vertical;
 }
 
+/* Knap til formular */
 form button {
   margin-top: 20px;
   padding: 10px 20px;
@@ -767,23 +805,26 @@ form button {
   cursor: pointer;
 }
 
+/* Effekt ved hover på knap */
 form button:hover {
   background-color: #ffeb3b;
   color: rgb(0, 0, 0);
   transition: all 0.3s ease;
 }
 
+/* Wrapper til dekorative streger */
 .streger-container {
-  width: 100%; /* Juster størrelsen her */
+  width: 100%; /* Fyld hele bredden */
 }
 
+/* Billede af streger */
 .streger-billede {
   width: 100%;
   height: auto;
 }
 
+/* Footer container */
 .footer {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -794,101 +835,123 @@ form button:hover {
   color: #000;
 }
 
+/* Venstre og højre sektion i footer */
 .footer-left,
 .footer-right {
   flex: 1;
   min-width: 200px;
 }
 
+/* Juster venstre tekst til venstre */
 .footer-left {
   text-align: left;
 }
 
+/* Højre del med lodret layout */
 .footer-right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-
+/* Midtersektion i footer */
 .footer-center {
   text-align: center;
   flex: 1;
 }
 
+/* Logo i footer */
 .footer-logo {
   width: 150px;
   height: auto;
 }
 
+/* Sociale medier sektion */
 .social {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
 
+/* Ikoner for sociale medier */
 .social img {
   width: 30px;
   margin-right: 10px;
 }
 
+/* Links i footeren */
 .footer a {
   color: #000;
   text-decoration: none;
 }
 
+/* Hover-effekt på footer-links */
 .footer a:hover {
   text-decoration: underline;
 }
 
+/* Overskrifter i footer */
 .footer-left h3,
 .footer-right h3 {
   font-size: 32px;
 }
 
+/* Brødtekst i venstre og højre footer */
 .footer-left span,
 .footer-right > a,
 .footer-right > p:not(.legal) {
   font-size: 24px;
 }
 
+/* Juridisk tekst i footer */
 .footer-right .legal {
   font-size: 12px;
   margin-top: 10px;
 }
 
+/* Kontaktoplysninger */
 .contact-info {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* eller center hvis du vil centrere */
-  gap: 5px; /* lidt luft mellem linjerne */
+  align-items: flex-start; /* Venstrejusteret */
+  gap: 5px; /* Luft mellem linjer */
 }
 
+/* Individuelle kontaktlinjer */
 .contact-item {
   display: block;
   font-size: 24px;
   font-weight: normal;
 }
 
+/* Burger-menu til mobil – skjult som standard */
 .burger-menu {
-  display: none; /* skjul burger-menu på desktop som default */
+  display: none;
 }
 
+/* Mobil-navigation – skjult som standard */
 .mobile-nav {
-  display: none; /* skjul mobil-navigation på desktop */
+  display: none;
 }
 
+/* Gælder alle elementer – sørger for korrekt boksmodellogik */
 * {
   box-sizing: border-box;
 }
 
+/* Basisreset af side */
 html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Undgå horisontal scroll */
 }
 
+/* ---------------------------------------------
+   MOBILVISNING: max-width 430px
+   --------------------------------------------- */
 @media only screen and (max-width: 430px) {
+
+  /* Header justering til mobil */
   header {
     flex-direction: row;
     justify-content: space-between;
@@ -898,11 +961,13 @@ html, body {
     position: relative;
   }
 
+  /* Skjul desktop navigation */
   .nav-left,
   .nav-right {
     display: none;
   }
 
+  /* Vis burger-menu */
   .burger-menu {
     display: block;
     font-size: 2.5rem;
@@ -914,6 +979,7 @@ html, body {
     z-index: 1000;
   }
 
+  /* Mobilmenu skjult som standard */
   .mobile-nav {
     display: none;
     flex-direction: column;
@@ -922,26 +988,30 @@ html, body {
     background-color: #F5F2E3;
     text-align: center;
     position: absolute;
-    top: 110px; /* under header */
+    top: 110px; /* Lige under header */
     width: 100%;
     z-index: 999;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
 
+  /* Mobilmenu links */
   .mobile-nav a {
-  color: black;
-  text-decoration: none;
-  font-weight: 600;
-}
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+  }
 
+  /* Aktiv mobilmenu (synlig) */
   .mobile-nav.active {
     display: flex;
   }
 
+  /* Logo størrelse */
   .logo img {
     width: 100px;
   }
 
+  /* Hero tekst responsiv */
   .hero-text h1 {
     font-size: 2rem;
   }
@@ -951,12 +1021,14 @@ html, body {
     padding: 0 1rem;
   }
 
-  .Hero-knap{
+  /* Hero knap */
+  .Hero-knap {
     font-size: 1.2rem;
     padding: 8px 16px;
     margin-top: 10px;
   }
 
+  /* Om-sektion: stack vertically */
   .about {
     flex-direction: column;
     padding: 2rem 5%;
@@ -970,6 +1042,7 @@ html, body {
     font-size: 18px;
   }
 
+  /* Billedsektioner – vertikal stacking */
   .image-small {
     flex-direction: column;
   }
@@ -978,6 +1051,7 @@ html, body {
     width: 100%;
   }
 
+  /* Ekspertise-sektion */
   .expertise-content {
     flex-direction: column;
     padding: 2rem 1rem;
@@ -996,19 +1070,15 @@ html, body {
     height: 20px;
   }
 
+  /* Workshop kolonner */
   .workshop-columns {
     flex-direction: column;
     gap: 2rem;
     padding: 0 1rem;
   }
 
-  .faq-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 0 1rem;
-  }
-
+  /* FAQ + kunst gallerier */
+  .faq-grid,
   .art-grid {
     display: flex;
     flex-direction: column;
@@ -1016,6 +1086,7 @@ html, body {
     padding: 0 1rem;
   }
 
+  /* Keramik billeder + tekst */
   .Keramik-bil1,
   .Keramik-bil2 {
     display: flex;
@@ -1030,6 +1101,7 @@ html, body {
     height: auto;
   }
 
+  /* Priser */
   .pris-container {
     flex-direction: column;
     align-items: center;
@@ -1037,6 +1109,7 @@ html, body {
     padding: 0 1rem;
   }
 
+  /* Kontaktboks layout */
   .kontaktboks {
     flex-direction: column;
     padding: 2rem 1rem;
@@ -1047,6 +1120,7 @@ html, body {
     width: 100%;
   }
 
+  /* Footer layout mobil */
   .footer {
     flex-direction: column;
     align-items: center;
@@ -1069,6 +1143,7 @@ html, body {
     font-size: 18px;
   }
 
+  /* FAQ header styling */
   .faq-header {
     text-align: center;
   }
@@ -1081,137 +1156,152 @@ html, body {
     font-size: 24px;
   }
 
-
-.faq-grid h3{
-  text-align: left;
-  font-size: 20px;
-}
-
-.faq-grid p {
-  text-align: left;
-  font-size: 16px;
-}
-
-.faq-item{
-  margin-top: 15px;
-}
-
-.Keramik-bil3 {
-  width: 200px;
-}
-.Keramik-bil1{
-margin-left: 150px;
-}
-
-.Keramik-tekst{
-  width: 200px;
- margin-left: 160px;
-}
-
-.keramik-bil4{
-  width: 200px;
-}
-
-.Keramik-bil2{
-  margin-left: 150px;
-  width: 230px;
-  margin-top: 15px;
-}
-
-.Digital-bil2{
-  margin-top: 50px;
-  width: 300px;
-  margin-left: 50px;
-}
-
-.Digital-bil1{
-margin-left: 50px;
-width: 300px;
-}
-
-.Digital-tekst{
-  margin-left: 30px;
-}
-
-
-.footer{
-  align-items: center;
-}
-
-.footer-left{
-  align-items: center;
-  margin-left: 55px;
-}
-
-.footer-center{
-  display: none;
-}
-
-.footer-right {
-  align-items: center;
-  margin-right: 38px;
-}
-
-.priser h2{
-  font-size: 32px;
-}
-
-.prisboks{
-  width: 250px;
-}
-
-.prisboks p {
-  font-size: 12px;
-  max-width: 200px;
-  line-height: 1.4;
-}
-
-.pris {
-  font-size: 28px;
-  font-weight: bold;
-  background: rgba(255, 255, 255, 0.2);
-  padding: 10px 20px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-}
-
-.Eventh2{
-  margin-bottom: 0px;
-}
-.Event{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.Event1,.Event2,.Event3{
-  margin-top: 50px;
-}
-.Event-knap{
-  margin-left: 5px;
-white-space: nowrap;
-}
-
-}
-.workshop-columns {
-  align-items: center;
+  /* FAQ indhold */
+  .faq-grid h3 {
+    text-align: left;
+    font-size: 20px;
   }
 
- /* Skjul burger-menu på skærme bredere end 768px */
+  .faq-grid p {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .faq-item {
+    margin-top: 15px;
+  }
+
+  /* Billedspecifik styling (manuelle tilpasninger) */
+  .Keramik-bil3 {
+    width: 200px;
+  }
+
+  .Keramik-bil1 {
+    margin-left: 150px;
+  }
+
+  .Keramik-tekst {
+    width: 200px;
+    margin-left: 160px;
+  }
+
+  .keramik-bil4 {
+    width: 200px;
+  }
+
+  .Keramik-bil2 {
+    margin-left: 150px;
+    width: 230px;
+    margin-top: 15px;
+  }
+
+  .Digital-bil2 {
+    margin-top: 50px;
+    width: 300px;
+    margin-left: 50px;
+  }
+
+  .Digital-bil1 {
+    margin-left: 50px;
+    width: 300px;
+  }
+
+  .Digital-tekst {
+    margin-left: 30px;
+  }
+
+  /* Footer tilpasninger (overlap med tidligere) */
+  .footer {
+    align-items: center;
+  }
+
+  .footer-left {
+    align-items: center;
+    margin-left: 55px;
+  }
+
+  .footer-center {
+    display: none;
+  }
+
+  .footer-right {
+    align-items: center;
+    margin-right: 38px;
+  }
+
+  /* Pris-sektion */
+  .priser h2 {
+    font-size: 32px;
+  }
+
+  .prisboks {
+    width: 250px;
+  }
+
+  .prisboks p {
+    font-size: 12px;
+    max-width: 200px;
+    line-height: 1.4;
+  }
+
+  .pris {
+    font-size: 28px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* Event-sektion */
+  .Eventh2 {
+    margin-bottom: 0px;
+  }
+
+  .Event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Event1, .Event2, .Event3 {
+    margin-top: 50px;
+  }
+
+  .Event-knap {
+    margin-left: 5px;
+    white-space: nowrap;
+  }
+}
+
+/* Justering for workshop columns (udenfor media query) */
+.workshop-columns {
+  align-items: center;
+}
+
+/* ---------------------------------------------
+   DESKTOPVISNING: min-width 768px
+   --------------------------------------------- */
 @media (min-width: 768px) {
+
+  /* Skjul burger-menu */
   .burger-menu {
     display: none;
   }
 
+  /* Sørg for desktop-menu vises */
   nav ul {
-    display: flex !important; /* sørg for at desktop-menu vises som flex */
+    display: flex !important;
   }
 
   nav {
     position: static !important;
   }
-
 }
- 
+
+/* ---------------------------------------------
+   EKSTRA LILLE SKÆRM: max-width 480px
+   --------------------------------------------- */
 @media (max-width: 480px) {
   .kontaktboks {
     flex-direction: column;
@@ -1221,7 +1311,7 @@ white-space: nowrap;
   }
 
   .venstre {
-    display: none; /* Skjul billede og dots */
+    display: none; /* Skjul venstre billede */
   }
 
   .hoejre {
@@ -1252,4 +1342,3 @@ white-space: nowrap;
     width: 100%;
   }
 }
-
