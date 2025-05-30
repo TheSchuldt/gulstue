@@ -1,49 +1,68 @@
 <!DOCTYPE html>
+<!-- Angiver at dette er et HTML5-dokument -->
 <html lang="da">
+<!-- Angiver sprog til dansk -->
 <head>
   <meta charset="UTF-8" />
+  <!-- Angiver tegnsætning som UTF-8 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Gør siden responsiv på mobile enheder -->
   <title>Gul Stue</title>
+  <!-- Titel der vises i browserens fane -->
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Importerer en Google Font -->
   <link rel="stylesheet" href="style.css">
+  <!-- Linker til dit eget CSS stylesheet -->
 </head>
 
-
 <body>
+  <!-- HEADER med navigation og logo -->
   <header>
+    <!-- Venstre navigation -->
     <nav class="nav-left">
-  <a href="#omgulstue">Om Gul Stue</a>
-  <a href="#aktiviteter">Aktiviteter</a>
-  <a href="#faq">FAQ</a>
-</nav>
+      <a href="#omgulstue">Om Gul Stue</a>
+      <a href="#aktiviteter">Aktiviteter</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <!-- Logo i midten -->
     <div class="logo">
       <img src="billeder/logo.png" alt="Gul Stue Logo" />
     </div>
-<nav class="nav-right">
-  <a href="#portfolio">Portfolio</a>
-  <a href="#kontakt">Kontakt</a>
-  <a href="#priser">Priser</a>
-</nav>
-  </header>
-<div class="burger-menu" onclick="toggleMobileMenu()">☰</div>
-<div class="mobile-nav" id="mobileNav">
-  <a href="#omgulstue">Om Gul Stue</a>
-  <a href="#aktiviteter">Aktiviteter</a>
-  <a href="#faq">FAQ</a>
-  <a href="#portfolio">Portfolio</a>
-  <a href="#kontakt">Kontakt</a>
-  <a href="#priser">Priser</a>
-</div>
 
- 
+    <!-- Højre navigation -->
+    <nav class="nav-right">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="#priser">Priser</a>
+    </nav>
+  </header>
+
+  <!-- Burger-menu til mobil -->
+  <div class="burger-menu" onclick="toggleMobileMenu()">☰</div>
+
+  <!-- Mobil navigation som vises når burger-menu klikkes -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#omgulstue">Om Gul Stue</a>
+    <a href="#aktiviteter">Aktiviteter</a>
+    <a href="#faq">FAQ</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="#priser">Priser</a>
+  </div>
+
+  <!-- HERO sektion med baggrundsvideo -->
   <section class="hero">
     <video autoplay muted loop playsinline class="bg-video">
+      <!-- Automatisk afspilning, ingen lyd, og looper -->
       <source src="videoer/videogulstue.mp4" type="video/mp4" />
       Din browser understøtter ikke video-tagget.
     </video>
 
+    <!-- Overlægningslag for at gøre tekst mere læselig -->
     <div class="video-overlay"></div>
 
+    <!-- Tekst ovenpå videoen -->
     <div class="hero-text">
       <h1>Velkommen til Gul Stue</h1>
       <p>
@@ -51,78 +70,103 @@
         Lad os inspirere dig og dine børn til at udforske nye veje sammen.
       </p>
 
-      <a href="#Events"><Button class="Hero-knap">Tilmeld dig</Button></a>
+      <!-- Knap der fører til Events sektionen -->
+      <a href="#Events"><button class="Hero-knap">Tilmeld dig</button></a>
     </div>
   </section>
 
+  <!-- OM-sektion -->
   <section class="about" id="omgulstue">
     <div class="about-images">
+      <!-- Stor billede til venstre -->
       <div class="image-large">
         <img src="billeder/Billeder1.png" alt="Kreativt værksted">
       </div>
+
+      <!-- To mindre billeder til højre -->
       <div class="image-small">
         <img src="billeder/Billeder3.png" alt="Børn maler">
         <img src="billeder/Billeder2.png" alt="Maleaktivitet">
       </div>
     </div>
+
+    <!-- Tekstbeskrivelse af Gul Stue -->
     <div class="about-text">
       <h2>Hvad er Gul Stue?</h2>
       <p>
-Gul Stue skaber workshops, der forener leg, læring og fællesskab. Vores mission er at støtte hjemmepassende familier gennem kreative aktiviteter, der fremmer udvikling og styrker båndene mellem børn og forældre.      </p>
+        Gul Stue skaber workshops, der forener leg, læring og fællesskab. Vores mission er at støtte hjemmepassende familier gennem kreative aktiviteter, der fremmer udvikling og styrker båndene mellem børn og forældre.
+      </p>
+
+      <!-- Lille billede med krone -->
       <div class="crown-wrapper">
         <img src="billeder/crown.png" alt="Kronetegning" class="crown-icon">
       </div>
-      <p>
-      Gennem stærkt didaktisk faciliterede workshops, skabt af stærk faglighed, kan både børn og voksne udfolde sig og tage ny viden og læring med hjem.
 
-Et socialt-kreativt initiavt med base i købehavn, hvor hjemmepassende forældre og deres børn har mulighed for at deltage på lige fod med andre familier. 
+      <p>
+        Gennem stærkt didaktisk faciliterede workshops, skabt af stærk faglighed, kan både børn og voksne udfolde sig og tage ny viden og læring med hjem.
+        Et socialt-kreativt initiativ med base i København, hvor hjemmepassende forældre og deres børn har mulighed for at deltage på lige fod med andre familier.
       </p>
+
       <p class="About-p1">
-      Ønsker du at få mere kreativitet, læring og sociale fællesskaber ind i både din og dine børns hverdag?
-Så er Gul Stue måske noget for dig.
+        Ønsker du at få mere kreativitet, læring og sociale fællesskaber ind i både din og dine børns hverdag?
+        Så er Gul Stue måske noget for dig.
       </p>
     </div>
   </section>
 
-<section class="expertise">
-  <div class="expertise-content">
-    <div class="expertise-text">
-      <h2 class="faglighed-overskrift">Fagligheden bag Gul Stue</h2>
-      <p>
-      Gul Stue er faciliteret og skabt af uddannet friskolelærer Sofie Bang.
-Sofie er uddannet på den fri lærerskole på Fyn og har en stor fagpakke, der er stærkt præget af de kreative og socialvidenskabelige fag.
+  <!-- FAGLIGHED-sektion -->
+  <section class="expertise">
+    <div class="expertise-content">
+      <!-- Tekst omkring faglighed -->
+      <div class="expertise-text">
+        <h2 class="faglighed-overskrift">Fagligheden bag Gul Stue</h2>
+        <p>
+          Gul Stue er faciliteret og skabt af uddannet friskolelærer Sofie Bang.
+          Sofie er uddannet på den fri lærerskole på Fyn og har en stor fagpakke, der er stærkt præget af de kreative og socialvidenskabelige fag.
 
-Sofie er, samtidigt med at være lærer, kunstner. Hun benytter sig af mange medier, som kan ses længere nede på siden.
-      </p>
-      <div class="dots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+          Sofie er, samtidigt med at være lærer, kunstner. Hun benytter sig af mange medier, som kan ses længere nede på siden.
+        </p>
+
+        <!-- Tre prikker evt. til billede-slider/visuel navigation -->
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <!-- Billede af Sofie -->
+      <div class="expertise-image">
+        <img src="billeder/Sofie.png" alt="Person bag Gul Stue" />
       </div>
     </div>
-    <div class="expertise-image">
-      <img src="billeder/Sofie.png" alt="Person bag Gul Stue" />
-    </div>
-  </div>
-</section>
+  </section>
 
 
+
+<!-- Workshops-sektion -->
 <section class="workshops-section" id="aktiviteter">
+  <!-- Overskrift for sektionen -->
   <h2>Værider og Events</h2>
+  <!-- Underoverskrift -->
   <p class="subheading">Her kan du læse mere om fordelene ved Gul Stues workshops</p>
 
+  <!-- Kolonner med workshop-punkter -->
   <div class="workshop-columns">
+    <!-- Første workshop-element -->
     <div class="workshop-item">
       <div class="image-container">
+        <!-- Billede til workshop -->
         <img src="billeder/billede6 1.png" alt="Socialt fællesskab" />
       </div>
       <h3>Socialt fællesskab</h3>
       <p>
-       Hos Gul Stue er det sociale fællesskab en prioritet. Her åbnes op for nye fællesskaber i trygge rammer.
-Nyd en kop kaffe eller mød med en ny ven.
+        Hos Gul Stue er det sociale fællesskab en prioritet. Her åbnes op for nye fællesskaber i trygge rammer.
+        Nyd en kop kaffe eller mød med en ny ven.
       </p>
     </div>
 
+    <!-- Andet workshop-element -->
     <div class="workshop-item">
       <div class="image-container">
         <img src="billeder/billede7 1.png" alt="Faglig udvikling" />
@@ -133,75 +177,92 @@ Nyd en kop kaffe eller mød med en ny ven.
       </p>
     </div>
 
+    <!-- Tredje workshop-element -->
     <div class="workshop-item">
       <div class="image-container">
         <img src="billeder/billede4 1.png" alt="Kreativ frihed" />
       </div>
       <h3>Kreativ frihed</h3>
       <p>
-     Det kan være svært at vide hvor man skal starte når man skal implementere det kreative i hverdagen - her giver Gul Stue kreativ frihed til både børn og forældre.
+        Det kan være svært at vide hvor man skal starte når man skal implementere det kreative i hverdagen - her giver Gul Stue kreativ frihed til både børn og forældre.
       </p>
     </div>
   </div>
 </section>
 
-
+<!-- Events overskrift -->
 <h2 id="Events" class="Eventh2">Events</h2>
+
+<!-- Events-sektion -->
 <section class="Event">
-<div class="Event1">
-<img src="billeder/nechama-lock-OpmBB7vlPJY-unsplash.png" alt="">
 
-<h3 class="Event-h3">Akrylmaling</h3>
-<div class="Eventp">
-<p>30. Maj</p>
-<p>Kl.12.00</p>
-<p>Amager Bibliotek</p>
-</div>
-<p class="Event-tekst">Kom og udforsk akrylmaling for de små. Her er der mulighed for at få penslerne i maling, øve former og farver og udfolde sig kunstnerisk med diverse akrylmalinger.</p>
-<a href="#kontakt"><Button class="Event-knap">Tilmeld dig</Button></a>
+  <!-- Event 1: Akrylmaling -->
+  <div class="Event1">
+    <img src="billeder/nechama-lock-OpmBB7vlPJY-unsplash.png" alt="">
 
-</div>
+    <h3 class="Event-h3">Akrylmaling</h3>
+    <div class="Eventp">
+      <!-- Dato og tidspunkt -->
+      <p>30. Maj</p>
+      <p>Kl.12.00</p>
+      <p>Amager Bibliotek</p>
+    </div>
+    <p class="Event-tekst">
+      Kom og udforsk akrylmaling for de små. Her er der mulighed for at få penslerne i maling, øve former og farver og udfolde sig kunstnerisk med diverse akrylmalinger.
+    </p>
+    <!-- Tilmeldingsknap -->
+    <a href="#kontakt"><button class="Event-knap">Tilmeld dig</button></a>
+  </div>
 
-<div class="Event2">
-<img src="billeder/jairo-gonzalez-v2bXB2tOeWw-unsplash.png" alt="">
+  <!-- Event 2: Fingermaling -->
+  <div class="Event2">
+    <img src="billeder/jairo-gonzalez-v2bXB2tOeWw-unsplash.png" alt="">
 
-<h3 class="Event-h3">Fælles fingermaling</h3>
-<div class="Eventp">
-<p>5. Jun</p>
-<p>Kl.12.00</p>
-<p>Amager Bibliotek</p>
-</div>
-<p class="Event-tekst">Før farverne fra fingre til papir. udforsk de taktile sanser i kreativitetens tegn. Lær om kroppens sanser og hvordan den er en vigtig del af den kreative proces.</p>
+    <h3 class="Event-h3">Fælles fingermaling</h3>
+    <div class="Eventp">
+      <p>5. Jun</p>
+      <p>Kl.12.00</p>
+      <p>Amager Bibliotek</p>
+    </div>
+    <p class="Event-tekst">
+      Før farverne fra fingre til papir. Udforsk de taktile sanser i kreativitetens tegn. Lær om kroppens sanser og hvordan den er en vigtig del af den kreative proces.
+    </p>
+    <a href="#kontakt"><button class="Event-knap">Tilmeld dig</button></a>
+  </div>
 
-<a href="#kontakt"><Button class="Event-knap">Tilmeld dig</Button></a>
+  <!-- Event 3: Skrald og skabertrang -->
+  <div class="Event3">
+    <img src="billeder/markus-spiske-lQ3rtuzaG9Y-unsplash.png" alt="">
 
-</div>
-<div class="Event3">
-<img src="billeder/markus-spiske-lQ3rtuzaG9Y-unsplash.png" alt="">
-
-<h3 class="Event-h3">Skrald og skabertrang</h3>
-<div class="Eventp">
-<p>26. Okt</p>
-<p>Kl.12.00</p>
-<p>Amager Bibliotek</p>
-</div>
-<p class="Event-tekst">Fra skrald til skabertrang! I denne workshop har vi fokus på miljøet. Vi tager gamle mælkekartoner og laver dem til kreatiev væsener. En god idé for dem, der vil have fokus på bæredygtighed.</p>
-
-
-<a href="#kontakt"><Button class="Event-knap">Tilmeld dig</Button></a>
-</div>
+    <h3 class="Event-h3">Skrald og skabertrang</h3>
+    <div class="Eventp">
+      <p>26. Okt</p>
+      <p>Kl.12.00</p>
+      <p>Amager Bibliotek</p>
+    </div>
+    <p class="Event-tekst">
+      Fra skrald til skabertrang! I denne workshop har vi fokus på miljøet. Vi tager gamle mælkekartoner og laver dem til kreative væsener. En god idé for dem, der vil have fokus på bæredygtighed.
+    </p>
+    <a href="#kontakt"><button class="Event-knap">Tilmeld dig</button></a>
+  </div>
 
 </section>
 
+
+<!-- FAQ-sektion -->
 <section class="faq-section" id="faq">
   <div class="faq-header">
+    <!-- Overskrift og introduktion til FAQ -->
     <h2>Udforsk nye kreative sider med dit barn</h2>
     <p>
       Her finder du svar på de mest almindelige spørgsmål, så du nemt og hurtigt kan få den hjælp, du søger.
     </p>
   </div>
 
+  <!-- Grid-layout med spørgsmål og svar -->
   <div class="faq-grid">
+
+    <!-- Spørgsmål 1 -->
     <div class="faq-item">
       <img src="billeder/spørgsmålstegn.png" alt="Spørgsmålstegn ikon" />
       <div>
@@ -210,6 +271,7 @@ Nyd en kop kaffe eller mød med en ny ven.
       </div>
     </div>
 
+    <!-- Spørgsmål 2 -->
     <div class="faq-item">
       <img src="billeder/spørgsmålstegn.png" alt="Spørgsmålstegn ikon" />
       <div>
@@ -218,34 +280,40 @@ Nyd en kop kaffe eller mød med en ny ven.
       </div>
     </div>
 
+    <!-- Spørgsmål 3 -->
     <div class="faq-item">
       <img src="billeder/spørgsmålstegn.png" alt="Spørgsmålstegn ikon" />
       <div>
         <h3>Skal jeg have noget med selv?</h3>
-        <p>Ikke andet end dig selv og dit barn - måske en madpakke hvis dit barn bliver sulten,</p>
+        <p>Ikke andet end dig selv og dit barn - måske en madpakke hvis dit barn bliver sulten.</p>
       </div>
     </div>
 
+    <!-- Spørgsmål 4 -->
     <div class="faq-item">
       <img src="billeder/spørgsmålstegn.png" alt="Spørgsmålstegn ikon" />
       <div>
         <h3>Hvordan tilmelder jeg mig?</h3>
-        <p>Du kan tilmelde dig via vores kontaktform i bunden af hjemmesiden,</p>
+        <p>Du kan tilmelde dig via vores kontaktform i bunden af hjemmesiden.</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Portfolio-sektion: Akrylkunst -->
 <section class="art-section" id="portfolio">
+  <!-- Dekorativ streg -->
   <div class="gul-streg-wrapper">
     <img src="billeder/rød-streg.png" alt="" class="gul-streg" />
   </div>
 
+  <!-- Tekst til kunst-sektionen -->
   <div class="art-text">
     <h2>Tidligere værker</h2>
     <p>Akrylmaling</p>
   </div>
 
+  <!-- Gitter med billeder af tidligere værker -->
   <div class="art-grid">
     <img src="billeder/maleri1.png" alt="Tidligere værk 1" />
     <img src="billeder/maleri2.png" alt="Tidligere værk 2" />
@@ -253,44 +321,57 @@ Nyd en kop kaffe eller mød med en ny ven.
   </div>
 </section>
 
+<!-- Portfolio-sektion: Keramik -->
 <section>
-<div class="Keramik-tekst">
-  <h2>Keramik</h2>
-</div>
+  <!-- Overskrift -->
+  <div class="Keramik-tekst">
+    <h2>Keramik</h2>
+  </div>
 
-<div class="Keramik-bil1">
-<img class="Keramik-bil3" src="billeder/keramik1.png" alt="">
-<img class="keramik-bil4" src="billeder/keramik2.png" alt="">
-</div>
+  <!-- Første række med keramiske værker -->
+  <div class="Keramik-bil1">
+    <img class="Keramik-bil3" src="billeder/keramik1.png" alt="">
+    <img class="keramik-bil4" src="billeder/keramik2.png" alt="">
+  </div>
 
-<div class="Keramik-bil2">
-<img src="billeder/keramik3.png" alt="">
-</div>
+  <!-- Anden række -->
+  <div class="Keramik-bil2">
+    <img src="billeder/keramik3.png" alt="">
+  </div>
 </section>
 
+<!-- Portfolio-sektion: Digital kunst -->
 <section>
+  <!-- Overskrift -->
   <div class="Digital-tekst">
     <h2>Digitalt</h2>
   </div>
 
+  <!-- Første video -->
   <div class="Digital-bil1">
     <video src="videoer/portfoliovideo1.mp4" controls></video>
   </div>
 
+  <!-- Anden video -->
   <div class="Digital-bil2">
     <video src="videoer/portfoliovideo2.mp4" controls></video>
   </div>
 </section>
 
+<!-- Priser-sektion -->
 <section class="priser" id="priser">
-
   <h2>Priser</h2>
+
+  <!-- Beholder for prisbokse -->
   <div class="pris-container">
+    <!-- Éngangsbetaling -->
     <div class="prisboks engangs">
       <h3>Éngangsbeløb</h3>
       <div class="pris">189 <span>DKK</span></div>
       <p>Gul Stue skaber workshops, der forener leg, læring og fællesskab.</p>
     </div>
+
+    <!-- Klippekort -->
     <div class="prisboks klippekort">
       <h3>Klippekort</h3>
       <div class="pris">599 <span>DKK</span></div>
@@ -301,72 +382,98 @@ Nyd en kop kaffe eller mød med en ny ven.
 
 
 
+
+<!-- Kontaktsektion -->
 <section class="kontaktboks" id="kontakt">
+  <!-- Venstre side med billede og dekoration -->
   <div class="venstre">
     <img src="billeder/Billeder4.png" alt="Barn tegner" />
     <div class="dots">
+      <!-- Tre dekorative prikker -->
       <span></span><span></span><span></span>
     </div>
   </div>
+
+  <!-- Højre side med kontaktformular -->
   <div class="hoejre">
     <h2>Sjove aktiviteter designet til<br>børn i alderen <strong>3–6 år</strong></h2>
     <p>Kontakt Gul Stue for at få svar på dine spørgsmål, eller tilmeld dig en begivenhed.</p>
+
+    <!-- Kontaktformular -->
     <form>
+      <!-- Navn -->
       <label for="navn">Navn*</label>
       <input type="text" id="navn" name="navn" required>
 
+      <!-- E-mail -->
       <label for="email">E-mail*</label>
       <input type="email" id="email" name="email" required>
 
+      <!-- Emne -->
       <label for="emne">Emne</label>
       <input type="text" id="emne" name="emne">
 
+      <!-- Besked -->
       <label for="besked">Besked*</label>
       <textarea id="besked" name="besked" required></textarea>
 
+      <!-- Send-knap -->
       <button type="submit">Send</button>
     </form>
   </div>
 </section>
 
-  <div class="streger-container">
-    <img src="billeder/footerstreger.png" alt="To skrå streger" class="streger-billede">
-  </div>
-
-<footer class="footer">
-    <div class="footer-left">
-      <h3>Følg GulStue</h3>
-      <div class="social">
-        <img src="billeder/instagram-icon.png" alt="Instagram ikon">
-        <span>SofieGulStue</span>
-      </div>
-      <div class="social">
-        <img src="billeder/facebook-icon.png" alt="Facebook ikon">
-        <span>SofieGulStue</span>
-      </div>
-    </div>
-
-    <div class="footer-center">
-      <img src="billeder/logo.png" alt="GulStue logo" class="footer-logo" />
-    </div>
-
-<div class="footer-right">
-  <h2>Gulstue 2025</h2>
-  <h3>Kontakt</h3>
-  <div class="contact-info">
-    <a href="mailto:sofie@gulstue.dk" class="contact-item">sofie@gulstue.dk</a>
-    <a href="tel:+4574829320" class="contact-item">+45 23 86 32 35</a>
-  </div>
-  <p class="legal">
-    <a href="#">Handelsbetingelser</a><br>
-    <a href="#">Privatlivspolitik</a>
-  </p>
+<!-- Dekorativ streg under kontaktsektionen -->
+<div class="streger-container">
+  <img src="billeder/footerstreger.png" alt="To skrå streger" class="streger-billede">
 </div>
 
-  </footer>
+<!-- Footer (sidefod) -->
+<footer class="footer">
 
+  <!-- Venstre kolonne: Sociale medier -->
+  <div class="footer-left">
+    <h3>Følg GulStue</h3>
+    <div class="social">
+      <img src="billeder/instagram-icon.png" alt="Instagram ikon">
+      <span>SofieGulStue</span>
+    </div>
+    <div class="social">
+      <img src="billeder/facebook-icon.png" alt="Facebook ikon">
+      <span>SofieGulStue</span>
+    </div>
+  </div>
 
+  <!-- Midterkolonne: Logo -->
+  <div class="footer-center">
+    <img src="billeder/logo.png" alt="GulStue logo" class="footer-logo" />
+  </div>
+
+  <!-- Højre kolonne: Kontaktoplysninger og links -->
+  <div class="footer-right">
+    <h2>Gulstue 2025</h2>
+    <h3>Kontakt</h3>
+
+    <!-- Kontaktinfo -->
+    <div class="contact-info">
+      <a href="mailto:sofie@gulstue.dk" class="contact-item">sofie@gulstue.dk</a>
+      <a href="tel:+4574829320" class="contact-item">+45 23 86 32 35</a>
+    </div>
+
+    <!-- Juridiske links -->
+    <p class="legal">
+      <a href="#">Handelsbetingelser</a><br>
+      <a href="#">Privatlivspolitik</a>
+    </p>
+  </div>
+</footer>
+
+<!-- Scroll-til-top-knap -->
 <button id="scrollToTopBtn" class="scroll-to-top">↑</button>
+
+<!-- JavaScript-fil -->
 <script src="app.js"></script>
+
+<!-- Slut på dokumentet -->
 </body>
 </html>
