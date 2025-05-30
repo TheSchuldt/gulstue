@@ -1,68 +1,77 @@
+/* Generelle base-styles for hele siden */
 body {
-  margin: 0;
-  font-family: 'Quicksand', sans-serif;
-  background-color: #F5F2E3;
-  color: #000;
+  margin: 0; /* Fjerner standardmargin */
+  font-family: 'Quicksand', sans-serif; /* Primær skrifttype for brødtekst */
+  background-color: #F5F2E3; /* Baggrundsfarve */
+  color: #000; /* Tekstfarve */
 }
 
+/* Overskrifter og links bruger en anden skrifttype for kontrast */
 h1, h2, h3, h4, h5, h6, a {
   font-family: 'Fredoka', sans-serif;
 }
 
+/* Header sektion */
 header {
   background-color: #F5F2E3;
   padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: flex; /* Bruger flexbox til at arrangere elementerne horisontalt */
+  align-items: center; /* Vertikal centring */
+  justify-content: space-between; /* Fordeler plads mellem elementerne */
+  flex-wrap: wrap; /* Gør det muligt for elementerne at rykke ned på næste linje */
 }
 
+/* Navigation */
 nav {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
+  display: flex; /* Viser links på samme linje */
+  gap: 2rem; /* Afstand mellem links */
+  align-items: center; /* Vertikal centring */
 }
 
+/* Venstre side af navigationen */
 .nav-left {
-  flex: 1;
+  flex: 1; /* Fylder én del af flex-containeren */
   font-size: 24px;
-  justify-content: flex-start;
   padding-left: 5%;
-  justify-content: space-between;
+  justify-content: space-between; /* Fordeler plads mellem elementerne (OBS: overskriver tidligere justify) */
 }
 
+/* Højre side af navigationen */
 .nav-right {
   flex: 1;
   font-size: 24px;
-  justify-content: flex-end;
   padding-right: 5%;
-  justify-content: space-between;
+  justify-content: space-between; /* Samme som ovenfor */
 }
 
+/* Links i navigation */
 nav a {
-  text-decoration: none;
+  text-decoration: none; /* Fjerner understregning */
   color: black;
   font-weight: 600;
 }
 
+/* Logoet i midten af navigationen */
 .logo {
   flex: 1;
-  display: flex;
-  justify-content: center;
+  display: flex; /* For at kunne centrere billedet */
+  justify-content: center; /* Horisontal centring */
 }
 
+/* Logo billede */
 .logo img {
   width: 140px;
   height: auto;
 }
 
+/* Smooth scroll-effekt ved klik på ankre */
 html {
   scroll-behavior: smooth;
 }
 
+/* Knap til at komme tilbage til toppen */
 .scroll-to-top {
-  position: fixed;
+  position: fixed; /* Fast placering i nederste højre hjørne */
   bottom: 2rem;
   right: 2rem;
   width: 48px;
@@ -72,44 +81,46 @@ html {
   background-color: #fdd835;
   color: black;
   font-size: 24px;
-  display: none;
-  justify-content: center;
-  align-items: center;
+  display: none; /* Skjult som standard, vises ved behov */
+  justify-content: center; /* Indholdet centreres horisontalt */
+  align-items: center; /* Indholdet centreres vertikalt */
   cursor: pointer;
-  z-index: 9999;
+  z-index: 9999; /* Sikrer at knappen ligger øverst */
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: opacity 0.3s ease;
 }
+
 .scroll-to-top:hover {
   background-color: #ffeb3b;
 }
 
-
-/* HERO sektion */
+/* ------------------- HERO Sektion ------------------- */
 .hero {
-  position: relative;
+  position: relative; /* Gør det muligt at placere child-elementer absolut i forhold til .hero */
   height: 100vh;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; /* Bruger flex til centrering */
+  align-items: center; /* Vertikal centrering */
+  justify-content: center; /* Horisontal centrering */
   color: white;
   text-align: center;
   padding: 0;
 }
 
+/* Video baggrund */
 .bg-video {
-  position: absolute;
+  position: absolute; /* Gør at videoen fylder hele containeren */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1;
+  z-index: -1; /* Ligger bag teksten */
 }
 
+/* Mørkt lag ovenpå videoen for bedre læsbarhed */
 .video-overlay {
-  position: absolute;
+  position: absolute; /* Ligger oven på videoen */
   top: 0;
   left: 0;
   width: 100%;
@@ -118,25 +129,29 @@ html {
   z-index: 0;
 }
 
+/* Tekst oven på hero-video */
 .hero-text {
-  position: relative;
+  position: relative; /* Sikrer at den vises over overlay */
   z-index: 1;
   max-width: 1200px;
   padding: 2rem;
 }
 
+/* Hero overskrift */
 .hero-text h1 {
   font-size: 6rem;
   margin-bottom: 1rem;
 }
 
+/* Hero beskrivende tekst */
 .hero-text p {
   font-size: 2.4rem;
   line-height: 1.6;
 }
 
-.Hero-knap{
-   background-color: #F3D43C;
+/* Knap i hero */
+.Hero-knap {
+  background-color: #F3D43C;
   border: none;
   font-size: 2.2rem;
   padding: 8px 24px;
@@ -144,22 +159,23 @@ html {
   border-radius: 8px;
 }
 
-/* ABOUT sektion */
+/* ------------------- ABOUT Sektion ------------------- */
 .about {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex; /* Bruger flex til layout */
+  flex-wrap: wrap; /* Gør det responsivt */
   padding: 4rem 4%;
   gap: 2rem;
-
 }
 
+/* Venstre billedsektion i "about" */
 .about-images {
-  flex: 1 1 35%;
-  display: flex;
+  flex: 1 1 35%; /* Bredde og fleksibilitet */
+  display: flex; /* Bruger flex til kolonne-layout */
   flex-direction: column;
   gap: 1rem;
 }
 
+/* Store og små billeder i about */
 .image-large img,
 .image-small img {
   width: 100%;
@@ -167,31 +183,34 @@ html {
   object-fit: cover;
 }
 
+/* Container til små billeder */
 .image-small {
-  display: flex;
+  display: flex; /* Bruger flex til vandret layout */
   gap: 1rem;
 }
 
+/* Billeder i .image-small */
 .image-small img {
   width: 48%;
 }
 
+/* Tekstsektion i "about" */
 .about-text {
   flex: 1 1 50%;
-  display: flex;
+  display: flex; /* Bruger flex for at centrere vertikalt */
   flex-direction: column;
   justify-content: center;
-
-
 }
 
+/* Overskrift i about */
 .about-text h2 {
   font-size: 49px;
   font-weight: 600;
-  display: flex;
+  display: flex; /* Bruger flex for centring */
   justify-content: center;
 }
 
+/* Brødtekst i about */
 .about-text p {
   font-size: 24px;
   line-height: 1.8;
@@ -200,46 +219,52 @@ html {
   text-align: center;
 }
 
+/* Wrapper til kroneikon */
 .crown-wrapper {
-  display: flex;
+  display: flex; /* Bruger flex til centring */
   justify-content: center;
   margin: 1.5rem 0;
 }
 
+/* Kroneikon størrelse */
 .crown-icon {
   width: 70px;
   height: auto;
 }
 
+/* ------------------- EXPERTISE Sektion ------------------- */
 .expertise {
   padding: 4rem 5%;
   margin-bottom: 70px;
 }
 
+/* Indholdsområde med gul baggrund */
 .expertise-content {
   background-color: #fadd3d;
   border-radius: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  justify-content: center;
+  display: flex; /* Flex container */
+  flex-wrap: wrap; /* Responsivitet */
+  align-items: center; /* Vertikal centring */
+  justify-content: center; /* Centrerer både tekst og billede */
   padding: 3rem;
   gap: 2rem;
 }
 
+/* Venstre tekstområde */
 .expertise-text {
   flex: 1 1 60%;
 }
 
+/* Overskrift i expertise */
 .expertise-text h2 {
   font-size: 48px;
   font-weight: 600;
   margin-bottom: 1rem;
-  display: flex;
+  display: flex; /* Centrerer teksten */
   justify-content: center;
 }
 
+/* Brødtekst i expertise */
 .expertise-text p {
   font-size: 24px;
   line-height: 1.6;
@@ -248,40 +273,41 @@ html {
   text-align: center;
 }
 
+/* Dots-navigation */
 .dots {
   margin-top: 3rem;
-  display: flex;
-  justify-content: center; /* Centreret */
+  display: flex; /* Viser prikkerne side om side */
+  justify-content: center;
   gap: 1.5rem;
 }
 
+/* Enkel prik */
 .dot {
-  width: 50px;           /* Større prikker */
+  width: 50px;
   height: 50px;
   background-color: white;
   border-radius: 50%;
   opacity: 1;
-
 }
 
+/* Aktiv prik */
 .dot.active {
   opacity: 1;
 }
 
-
+/* Højre billede */
 .expertise-image img {
   width: 250px;
   height: auto;
-  
 }
+
 
 .workshops-section {
   padding: 10rem 2rem;
   text-align: center;
-  position: relative;
-  overflow: hidden;
-  /* height: 1400px;  🚫 fjern denne linje */
-  min-height: 100vh; /* valgfrit, hvis du vil sikre en vis minimumshøjde */
+  position: relative; /* Gør det muligt at absolut positionere pseudo-elementer (f.eks. ::before) */
+  overflow: hidden; /* Skjuler overløbende indhold */
+  min-height: 100vh; /* Sikrer at sektionen fylder mindst hele højden af viewporten */
 }
 
 .workshops-section h2 {
@@ -296,11 +322,11 @@ html {
 }
 
 .workshop-columns {
-  display: flex;
-  gap: 10rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: relative;
+  display: flex; /* Viser elementerne horisontalt */
+  gap: 10rem; /* Stor afstand mellem kolonner */
+  justify-content: center; /* Centrerer hele rækken horisontalt */
+  flex-wrap: wrap; /* Gør layoutet responsivt – elementer rykker ned ved behov */
+  position: relative; /* Gør det muligt at placere evt. elementer absolut heri */
 }
 
 .workshop-item {
@@ -310,14 +336,14 @@ html {
 
 .image-container {
   width: 100%;
-  overflow: hidden;
+  overflow: hidden; /* Skjuler evt. overløb fra billeder */
   margin-bottom: 1rem;
 }
 
 .image-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Sørger for at billedet fylder containeren uden at forvrænges */
 }
 
 .workshop-item h3 {
@@ -331,38 +357,39 @@ html {
   line-height: 1.5;
 }
 
-/* Valgfri: Hvis du vil tilføje en SVG-streg mellem elementerne */
+/* Dekorativ streg bag workshops, der ikke påvirker layout */
 .workshops-section::before {
   content: "";
-  position: absolute;
+  position: absolute; /* Placerer elementet ovenpå indholdet */
   top: -110px;
   left: 0;
   right: 0;
   height: 1500px;
   background: url("billeder/gul-streg.png") no-repeat center;
   background-size: contain;
-  z-index: 0;
-  pointer-events: none;
+  z-index: 0; /* Sørger for at det ligger bag alt andet */
+  pointer-events: none; /* Gør det ikke klikbart */
 }
 
-.Eventh2{
+.Eventh2 {
   font-size: 48px;
   text-align: center;
-  margin-bottom: 1rem;
   margin-bottom: 200px;
 }
-.Event{
-  display: flex
+
+.Event {
+  display: flex; /* Viser Event-sektionen som flex-container */
 }
 
-.Eventp{
-display: flex;
-flex-direction: row;
-font-size: 16px;
-width: 300px;
-justify-content: space-between;
+.Eventp {
+  display: flex; /* Viser elementerne side om side */
+  flex-direction: row; /* Sikrer vandret layout */
+  font-size: 16px;
+  width: 300px;
+  justify-content: space-between; /* Laver afstand mellem elementerne */
 }
-.Event-tekst{
+
+.Event-tekst {
   font-size: 24px;
   color: #333;
   line-height: 1.5;
@@ -371,45 +398,27 @@ justify-content: space-between;
   width: 300px;
 }
 
-.Event-h3{
+.Event-h3 {
   text-align: left;
   width: 300px;
   font-size: 30px;
 }
 
-.Event1{
-  display: flex;
+/* Hver event-kolonne */
+.Event1, .Event2, .Event3 {
+  display: flex; /* Gør det muligt at stable indhold lodret */
   flex-direction: column;
-  width: 33%;
-  align-items: center;
+  width: 33%; /* Tager 1/3 af bredden hver */
+  align-items: center; /* Centrerer indhold horisontalt */
 }
 
-.Event1 img{
+/* Billeder i events */
+.Event1 img, .Event2 img, .Event3 img {
   width: 300px;
 }
 
-.Event2{
-  display: flex;
-  flex-direction: column;
-    width: 33%;
-    align-items: center;
-}
-
-.Event2 img{
-  width: 300px;
-}
-.Event3{
-  display: flex;
-  flex-direction: column;
-    width: 33%;
-    align-items: center;
-}
-
-.Event3 img{
-  width: 300px;
-}
-
-.Event-knap{
+/* Knap til events */
+.Event-knap {
   background-color: #F3D43C;
   border: none;
   font-size: 24px;
@@ -418,11 +427,11 @@ justify-content: space-between;
   border-radius: 8px;
 }
 
-
+/* FAQ sektion */
 .faq-section {
   padding: 5rem 2rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto; /* Centrerer containeren på siden */
 }
 
 .faq-header {
@@ -443,22 +452,22 @@ justify-content: space-between;
 }
 
 .faq-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 kolonner */
-  gap: 2rem 4rem; /* lodret og vandret afstand */
-  align-items: start;
+  display: grid; /* Bruger CSS Grid layout */
+  grid-template-columns: repeat(2, 1fr); /* To lige brede kolonner */
+  gap: 2rem 4rem; /* Lodret og vandret afstand */
+  align-items: start; /* Starter ved top for hvert grid-element */
 }
 
 .faq-item {
-  display: flex;
-  align-items: flex-start;
+  display: flex; /* Bruger flexbox til at placere billede og tekst side om side */
+  align-items: flex-start; /* Justerer indhold til top */
   gap: 1rem;
 }
 
 .faq-item img {
   width: 80px;
   height: 80px;
-  flex-shrink: 0;
+  flex-shrink: 0; /* Forhindrer at billedet krymper */
 }
 
 .faq-item h3 {
